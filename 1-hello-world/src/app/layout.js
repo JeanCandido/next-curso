@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
       <head>
-      <meta name="google-site-verification" content="googleadd56bc81226a1d5.html" />
+        <meta name="google-site-verification" content="EokArCp9yyGbD2BmcxchD4K-aipg9a64Y_e0D8syu44" />
       </head>
       <body className={inter.className}>
         <NavBar/>
