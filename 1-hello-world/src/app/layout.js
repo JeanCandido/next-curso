@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import NavBar from "../../components/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +16,13 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="EokArCp9yyGbD2BmcxchD4K-aipg9a64Y_e0D8syu44" />
       </head>
       <body className={inter.className}>
-        <NavBar/>
+        <div>
+          <ul className="bg-black text-white flex gap-6 p-2">
+            <Link href="/" className=" hover:bg-slate-800 p-2 rounded">Home</Link>
+            <Link href="/products" className=" hover:bg-slate-800 p-2 rounded">Produtos</Link>
+            <Link href="/about" className=" hover:bg-slate-800 p-2 rounded">Sobre nós</Link>
+          </ul>
+        </div>
         {children}
       </body>
     </html>
